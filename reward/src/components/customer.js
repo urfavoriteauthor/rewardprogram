@@ -1,4 +1,6 @@
 import react from 'react'
+import Purchases from './purchases'
+import Reward from './reward'
 
 class Customer extends React.Component{
     render(){
@@ -6,11 +8,26 @@ class Customer extends React.Component{
             <div>
                 {/* Hold cards with info, display profile info for customer */}
                 <h1>Welcome John</h1>
-                <div className='row'>
-                    <div className='col'>Today's purchase total</div>
-                    <div className='col'>30 Day purchase total</div>
-                    <div className='col'>60 day Purchase total</div>
-                    <div className='col'>90 Day Purchas total</div>
+
+                <div className='container-fluid d-flex content-justify-center'>
+                    <div className='row'>
+                        <div className='col-md-3'><h3>Today's purchase total</h3>
+                            <Purchases></Purchases>
+                            <Reward></Reward>
+                        </div>
+                        <div className='col-md-3'><h3>30 Day purchase total</h3>
+                            <Purchases></Purchases>
+                            <Reward></Reward>
+                        </div>
+                        <div className='col-md-3'><h3>60 Day purchase total</h3>
+                            <Purchases></Purchases>
+                            <Reward></Reward>
+                        </div>
+                        <div className='col-md-3'><h3>90 Day purchase total</h3>
+                            <Purchases></Purchases>
+                            <Reward></Reward>
+                        </div>                           
+                    </div>
                 </div>
             </div>
         )
