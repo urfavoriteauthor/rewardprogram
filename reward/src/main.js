@@ -7,7 +7,7 @@ class Main extends React.Component{
 <div>
     <h1>Beats by Nygel</h1>
     <h5>Sign up for Our Rewards Program</h5>
-    <Card/>
+    <Card title='Platinum Member' last ='Last Purchase 4/12/2020'/>
 </div>
         )
     }
